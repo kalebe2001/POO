@@ -1,0 +1,41 @@
+
+/**
+ * Escreva a descrição da classe Conta aqui.
+ * 
+ * @author (seu nome) 
+ * @version (número de versão ou data)
+ */
+public class Conta
+{
+    // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
+    private float saldo;
+    private int id_conta;
+
+    /**
+     * COnstrutor para objetos da classe Conta
+     */
+    public Conta(int id_conta)
+    {
+        this.id_conta = id_conta;
+        this.saldo = 0; //passagem de parametro direta
+        
+    } 
+    
+     public Conta(int id_conta, float saldo)
+    {
+        this.id_conta = id_conta;
+        this.saldo = saldo; //passagem de parametro pela classe
+    }
+    
+     public void setSaldo( float saldo)// sem retorno pois apenas checa
+    {
+        this.saldo = saldo; //passagem de parametro pela classe
+    }
+
+     public float getSaldo( float saldo) // tipo float igual do objeto
+    {
+        this.saldo = saldo; //passagem de parametro pela classe
+    }
+
+
+}
